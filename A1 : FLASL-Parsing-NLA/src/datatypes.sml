@@ -11,9 +11,10 @@ signature AST = sig
 				|	ITE of Prop * Prop * Prop
 	
 	datatype Argument = HENCE of Prop list * Prop
-	val ArgToString : Argument -> string
-	val PropListToString : Prop list -> string
-	val PropToString : Prop -> string
+	
+	val ArgToFlasl : Argument -> string
+	val PropListToFlasl : Prop list -> string
+	val PropToFlasl : Prop -> string
 end
 
 structure AST : AST =
@@ -29,22 +30,22 @@ structure AST : AST =
 	
 	datatype Argument = HENCE of Prop list * Prop
 
-	fun PropToString (ATOM(str))			= (str)
-	|	PropToString (NOT(p))			= ("NOT " ^ PropToString(p))
-	|	PropToString (AND(p1, p2))			= (PropToString(p1) ^ " AND " ^ PropToString(p2))
-	|	PropToString (OR(p1, p2))			= (PropToString(p1) ^ " OR " ^ PropToString(p2))
-	|	PropToString (COND(p1, p2))			= ("IF " ^ PropToString(p1) ^ " THEN " ^ PropToString(p2))
-	|	PropToString (BIC(p1, p2))			= (PropToString(p1) ^ " IFF " ^ PropToString(p2))
-	|	PropToString (ITE(p1, p2, p3))			= ("IF " ^ PropToString(p1) ^ " THEN " ^ PropToString(p2) ^ " ELSE " ^ PropToString(p3))
+	fun PropToFlasl (ATOM(str))			= (str)
+	|	PropToFlasl (NOT(p))			= ("NOT (" ^ PropToFlasl(p) ^ ")")
+	|	PropToFlasl (AND(p1, p2))			= ("(" ^ PropToFlasl(p1) ^ ") AND (" ^ PropToFlasl(p2) ^ ")")
+	|	PropToFlasl (OR(p1, p2))			= ("(" ^PropToFlasl(p1) ^ ") OR (" ^ PropToFlasl(p2) ^ ")")
+	|	PropToFlasl (COND(p1, p2))			= ("IF (" ^ PropToFlasl(p1) ^ ") THEN (" ^ PropToFlasl(p2) ^ ")")
+	|	PropToFlasl (BIC(p1, p2))			= ("(" ^ PropToFlasl(p1) ^ ") IFF (" ^ PropToFlasl(p2) ^ ")")
+	|	PropToFlasl (ITE(p1, p2, p3))			= ("IF (" ^ PropToFlasl(p1) ^ ") THEN (" ^ PropToFlasl(p2) ^ ") ELSE (" ^ PropToFlasl(p3) ^ ")")
 
-	fun PropListToString (x :: xs)			= (PropToString(x) ^ ". " ^ PropListToString(xs))
-	|	PropListToString ([])			= ("")
+	fun PropListToFlasl (x :: xs)			= (PropToFlasl(x) ^ ". " ^ PropListToFlasl(xs))
+	|	PropListToFlasl ([])			= ("")
 
-	fun ArgToString (HENCE(x, y))			= (PropListToString(x) ^ "THEREFORE " ^ PropToString(y))
+	fun ArgToFlasl (HENCE(x, y))			= (PropListToFlasl(x) ^ "THEREFORE (" ^ PropToFlasl(y)^ ").")
 
 
-	val ArgToString = ArgToString;
-	val PropListToString = PropListToString;
-	val PropToString = PropToString;
+	val ArgToFlasl = ArgToFlasl;
+	val PropListToFlasl = PropListToFlasl;
+	val PropToFlasl = PropToFlasl;
 	
 end;

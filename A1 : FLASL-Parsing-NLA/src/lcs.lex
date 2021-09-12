@@ -34,4 +34,6 @@ ws  = [\ \t];
 {ws}*"IFF"{ws}*		=> (Tokens.IFFV(!pos,!pos));
 {ws}*"ELSE"{ws}*		=> (Tokens.ELSEV(!pos,!pos));
 {ws}*"THEREFORE"{ws}*	=> (TextIO.output(TextIO.stdOut, "\n\n\nTHEREFORE AAYA\n\n\n");Tokens.THEREFOREV(!pos,!pos));
-"\""[^\"]*"\""	=> (TextIO.output(TextIO.stdOut, "\n\n\nManoj is boss3\n\n\n");Tokens.ATOMV(yytext, !pos, !pos));
+"\""[^\"]*"\""	=> (TextIO.output(TextIO.stdOut, "\n\n\nManoj is boss3\n\n\n"^yytext^"\n");Tokens.ATOMV(yytext, !pos, !pos));
+"("				=> (TextIO.output(TextIO.stdOut, "\n\n\nHurrey LEFTP\n\n\n");Tokens.LEFTP(!pos, !pos));
+")"				=> (TextIO.output(TextIO.stdOut, "\n\n\nHurrey RIGHTP\n\n\n");Tokens.RIGHTP(!pos, !pos));
