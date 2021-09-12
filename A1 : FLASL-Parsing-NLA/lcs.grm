@@ -62,4 +62,3 @@ stmtG : NOTV stmtG 									(NOT(stmtG))
 	  | LEFTP stmtB RIGHTP							(stmtB)
 
 stmtH : ATOMV 										(ATOM(ATOMV))
-
