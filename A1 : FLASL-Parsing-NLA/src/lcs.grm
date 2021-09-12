@@ -1,0 +1,60 @@
+(* Standard yacc file format, again borrowed 
+	from ml-yacc/examples/calc/calc.grm and 
+	modified as per requirement*)
+
+open AST
+
+%%
+
+%name Lcs
+
+%term ATOMV of string | NOTV | SPACEV | ANDV | ORV | IFV 
+| THENV | IFFV | ELSEV | THEREFOREV | COMMAV | DOTV | EOF | LEFTP | RIGHTP
+
+%nonterm start of Argument | stmt of Prop list | stmtA of Prop | stmtB of Prop 
+| stmtC of Prop | stmtD of Prop | stmtE of Prop | stmtF of Prop | stmtG of Prop | stmtH of Prop
+
+%pos int
+%eop EOF
+
+%noshift EOF
+
+
+%right IFFV
+%left ORV
+%left ANDV
+%nonassoc NOTV
+
+%verbose
+%%
+
+start : stmt THEREFOREV stmtA						(HENCE(stmt, stmtA))
+
+stmt  : stmtA stmt									(stmtA :: stmt)
+	  | stmtA										(stmtA :: [])
+
+stmtA : stmtB DOTV 									(stmtB)
+
+stmtB : stmtC IFFV stmtB							(BIC(stmtC, stmtB))
+	  | stmtC 										(stmtC)
+
+stmtC : IFV stmtC THENV stmtC 						(COND(stmtC1, stmtC2))
+	  | stmtC IFV stmtC								(COND(stmtC1, stmtC2))
+	  | IFV stmtC THENV stmtD ELSEV stmtC			(ITE(stmtC1, stmtD, stmtC2))
+	  | stmtE										(stmtE)
+
+stmtD : IFV stmtC THENV stmtD ELSEV stmtD 			(ITE(stmtC, stmtD1, stmtD2))
+	  | stmtE										(stmtE)
+
+stmtE : stmtF ANDV stmtE							(AND(stmtF, stmtE))
+	  | stmtF										(stmtF)
+
+
+stmtF : stmtG ORV stmtF								(OR(stmtG, stmtF))
+	  | stmtG										(stmtG)
+
+stmtG : NOTV stmtG 									(NOT(stmtG))
+	  | stmtH										(stmtH)
+
+stmtH : ATOMV 										(ATOM(ATOMV))
+
