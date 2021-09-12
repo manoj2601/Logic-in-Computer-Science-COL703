@@ -6,7 +6,7 @@
 structure Lcs  :
 	sig
 		val parser : string -> AST.Argument
-		val fileOutput : AST.Argument -> string
+		val smlOutput : AST.Argument -> string
 	end
 = struct 
 	exception LcsError;
@@ -22,49 +22,44 @@ structure Lcs  :
 	val invoke = fn lexstream =>
 		let val print_error = fn (str,pos,_) =>
 			TextIO.output(TextIO.stdOut,
-				"***Lcs Parser Error at character position " ^ (Int.toString pos) ^ "*** " ^ str ^ "\n")
+				"***Error Occured : Lcs Parser Error at " ^ (Int.toString pos) ^ "*** " ^ str ^ "\n")
 		in 
 		LcsParser.parse(0,lexstream,print_error,())
-		
 		end
 		
-	fun newLexer fcn = 
-		let val lexer = LcsParser.makeLexer fcn
-			val _ = LcsLex.UserDeclarations.init()
-		in lexer
-		end
-
-	fun stringToLexer str = (* creates a lexer from a string *)
-		let val done = ref false
+	fun getLexer str = (* creates a lexer from a string *)
+		let val strDone = ref false
 		in 
-		newLexer (fn n => if (!done) then "" else (done := true; str))
+		LcsParser.makeLexer (fn n => if (!strDone) then "" else (strDone := true; str))
 		end
 
-	fun lexerToParser (lexer) = (* creates a parser from a lexer *)
-		let val dummyEOF = LcsLrVals.Tokens.EOF(0,0)
+	fun getParserFromLexer (lexer) = (* creates a parser from a lexer *)
+		let val EOFToken = LcsLrVals.Tokens.EOF(0,0)
 			val (result,lexer) = invoke lexer
-			val (nextToken,lexer) = 
-			LcsParser.Stream.get lexer
+			val (nextToken,lexer) = LcsParser.Stream.get lexer
 		in 
-			if LcsParser.sameToken(nextToken,dummyEOF) then
+			if LcsParser.sameToken(nextToken,EOFToken) then
 				result
-			else (TextIO.output(TextIO.stdOut,"*** LCS PARSER WARNING -- unconsumed input ***\n");
+			else (TextIO.output(TextIO.stdOut,"*** Warning: LCS PARSER WARNING -- unconsumed input ***\n");
 				result)
 		end
 
-	val parseString = lexerToParser o stringToLexer
+	fun parseString str = 
+		let val a = getLexer str in
+		getParserFromLexer a 
+		end
 
 	fun parser (filename : string) =
 		let val ins = TextIO.openIn filename
-			fun parsetree ins = 
+			fun takeInput ins = 
 							let 
 								fun loop ins = String.implode(String.explode(TextIO.inputAll ins))
 							in
 								loop ins before TextIO.closeIn ins
 			end in
-			parseString (parsetree ins)
+			parseString (takeInput ins)
 	end
 
-	fun fileOutput (arg) = case arg of
-					  a	=> AST.ArgToString(a)
+	fun smlOutput (arg) = AST.ArgToSml(arg)
+
 end (* struct *)

@@ -1,0 +1,982 @@
+70 reduce/reduce conflicts
+3 shift/reduce conflicts
+
+error:  state 30: shift/reduce conflict (shift IFV, reduce by rule 8)
+error:  state 32: reduce/reduce conflict between rule 11 and rule 5 on RIGHTP
+error:  state 32: reduce/reduce conflict between rule 11 and rule 5 on DOTV
+error:  state 32: reduce/reduce conflict between rule 17 and rule 11 on RIGHTP
+error:  state 32: reduce/reduce conflict between rule 17 and rule 11 on DOTV
+error:  state 32: reduce/reduce conflict between rule 17 and rule 11 on IFFV
+error:  state 32: reduce/reduce conflict between rule 17 and rule 11 on IFV
+error:  state 32: reduce/reduce conflict between rule 20 and rule 17 on RIGHTP
+error:  state 32: reduce/reduce conflict between rule 20 and rule 17 on DOTV
+error:  state 32: reduce/reduce conflict between rule 20 and rule 17 on IFFV
+error:  state 32: reduce/reduce conflict between rule 20 and rule 17 on IFV
+error:  state 32: reduce/reduce conflict between rule 23 and rule 20 on RIGHTP
+error:  state 32: reduce/reduce conflict between rule 23 and rule 20 on DOTV
+error:  state 32: reduce/reduce conflict between rule 23 and rule 20 on IFFV
+error:  state 32: reduce/reduce conflict between rule 23 and rule 20 on IFV
+error:  state 32: reduce/reduce conflict between rule 23 and rule 20 on ANDV
+error:  state 40: shift/reduce conflict (shift IFV, reduce by rule 7)
+error:  state 43: reduce/reduce conflict between rule 17 and rule 11 on RIGHTP
+error:  state 43: reduce/reduce conflict between rule 17 and rule 11 on DOTV
+error:  state 43: reduce/reduce conflict between rule 17 and rule 11 on IFFV
+error:  state 43: reduce/reduce conflict between rule 17 and rule 11 on THENV
+error:  state 43: reduce/reduce conflict between rule 17 and rule 11 on IFV
+error:  state 43: reduce/reduce conflict between rule 20 and rule 17 on RIGHTP
+error:  state 43: reduce/reduce conflict between rule 20 and rule 17 on DOTV
+error:  state 43: reduce/reduce conflict between rule 20 and rule 17 on IFFV
+error:  state 43: reduce/reduce conflict between rule 20 and rule 17 on THENV
+error:  state 43: reduce/reduce conflict between rule 20 and rule 17 on IFV
+error:  state 43: reduce/reduce conflict between rule 23 and rule 20 on RIGHTP
+error:  state 43: reduce/reduce conflict between rule 23 and rule 20 on DOTV
+error:  state 43: reduce/reduce conflict between rule 23 and rule 20 on IFFV
+error:  state 43: reduce/reduce conflict between rule 23 and rule 20 on THENV
+error:  state 43: reduce/reduce conflict between rule 23 and rule 20 on IFV
+error:  state 43: reduce/reduce conflict between rule 23 and rule 20 on ANDV
+error:  state 45: reduce/reduce conflict between rule 23 and rule 20 on RIGHTP
+error:  state 45: reduce/reduce conflict between rule 23 and rule 20 on DOTV
+error:  state 45: reduce/reduce conflict between rule 23 and rule 20 on ELSEV
+error:  state 45: reduce/reduce conflict between rule 23 and rule 20 on IFFV
+error:  state 45: reduce/reduce conflict between rule 23 and rule 20 on THENV
+error:  state 45: reduce/reduce conflict between rule 23 and rule 20 on IFV
+error:  state 45: reduce/reduce conflict between rule 23 and rule 20 on ANDV
+error:  state 46: reduce/reduce conflict between rule 20 and rule 17 on RIGHTP
+error:  state 46: reduce/reduce conflict between rule 20 and rule 17 on DOTV
+error:  state 46: reduce/reduce conflict between rule 20 and rule 17 on ELSEV
+error:  state 46: reduce/reduce conflict between rule 20 and rule 17 on IFFV
+error:  state 46: reduce/reduce conflict between rule 20 and rule 17 on THENV
+error:  state 46: reduce/reduce conflict between rule 20 and rule 17 on IFV
+error:  state 46: reduce/reduce conflict between rule 23 and rule 20 on RIGHTP
+error:  state 46: reduce/reduce conflict between rule 23 and rule 20 on DOTV
+error:  state 46: reduce/reduce conflict between rule 23 and rule 20 on ELSEV
+error:  state 46: reduce/reduce conflict between rule 23 and rule 20 on IFFV
+error:  state 46: reduce/reduce conflict between rule 23 and rule 20 on THENV
+error:  state 46: reduce/reduce conflict between rule 23 and rule 20 on IFV
+error:  state 46: reduce/reduce conflict between rule 23 and rule 20 on ANDV
+error:  state 50: shift/reduce conflict (shift IFV, reduce by rule 9)
+error:  state 51: reduce/reduce conflict between rule 17 and rule 11 on RIGHTP
+error:  state 51: reduce/reduce conflict between rule 17 and rule 11 on DOTV
+error:  state 51: reduce/reduce conflict between rule 17 and rule 11 on IFFV
+error:  state 51: reduce/reduce conflict between rule 17 and rule 11 on THENV
+error:  state 51: reduce/reduce conflict between rule 17 and rule 11 on IFV
+error:  state 51: reduce/reduce conflict between rule 17 and rule 14 on ELSEV
+error:  state 51: reduce/reduce conflict between rule 20 and rule 17 on RIGHTP
+error:  state 51: reduce/reduce conflict between rule 20 and rule 17 on DOTV
+error:  state 51: reduce/reduce conflict between rule 20 and rule 17 on ELSEV
+error:  state 51: reduce/reduce conflict between rule 20 and rule 17 on IFFV
+error:  state 51: reduce/reduce conflict between rule 20 and rule 17 on THENV
+error:  state 51: reduce/reduce conflict between rule 20 and rule 17 on IFV
+error:  state 51: reduce/reduce conflict between rule 23 and rule 20 on RIGHTP
+error:  state 51: reduce/reduce conflict between rule 23 and rule 20 on DOTV
+error:  state 51: reduce/reduce conflict between rule 23 and rule 20 on ELSEV
+error:  state 51: reduce/reduce conflict between rule 23 and rule 20 on IFFV
+error:  state 51: reduce/reduce conflict between rule 23 and rule 20 on THENV
+error:  state 51: reduce/reduce conflict between rule 23 and rule 20 on IFV
+error:  state 51: reduce/reduce conflict between rule 23 and rule 20 on ANDV
+
+state 0:
+
+	start : . stmt THEREFOREV stmtA 
+
+	ATOMV	shift 12
+	NOTV	shift 11
+	IFV	shift 10
+	LEFTP	shift 9
+
+	start	goto 56
+	stmt	goto 8
+	stmtA	goto 7
+	stmtB	goto 6
+	stmtC	goto 5
+	stmtE	goto 4
+	stmtF	goto 3
+	stmtG	goto 2
+	stmtH	goto 1
+
+	.	error
+
+
+state 1:
+
+	stmtG : stmtH .  (reduce by rule 22)
+
+
+
+	.	reduce by rule 22
+
+
+state 2:
+
+	stmtF : stmtG . ORV stmtF 
+	stmtF : stmtG .  (reduce by rule 19)
+
+	ORV	shift 13
+
+
+	.	reduce by rule 19
+
+
+state 3:
+
+	stmtE : stmtF . ANDV stmtE 
+	stmtE : stmtF .  (reduce by rule 16)
+
+	ANDV	shift 14
+
+
+	.	reduce by rule 16
+
+
+state 4:
+
+	stmtC : stmtE .  (reduce by rule 10)
+
+
+
+	.	reduce by rule 10
+
+
+state 5:
+
+	stmtB : stmtC . IFFV stmtB 
+	stmtB : stmtC .  (reduce by rule 6)
+	stmtC : stmtC . IFV stmtC 
+
+	IFV	shift 16
+	IFFV	shift 15
+
+
+	.	reduce by rule 6
+
+
+state 6:
+
+	stmtA : stmtB . DOTV 
+
+	DOTV	shift 17
+
+
+	.	error
+
+
+state 7:
+
+	stmt : stmtA . stmt 
+	stmt : stmtA .  (reduce by rule 2)
+
+	ATOMV	shift 12
+	NOTV	shift 11
+	IFV	shift 10
+	LEFTP	shift 9
+
+	stmt	goto 18
+	stmtA	goto 7
+	stmtB	goto 6
+	stmtC	goto 5
+	stmtE	goto 4
+	stmtF	goto 3
+	stmtG	goto 2
+	stmtH	goto 1
+
+	.	reduce by rule 2
+
+
+state 8:
+
+	start : stmt . THEREFOREV stmtA 
+
+	THEREFOREV	shift 19
+
+
+	.	error
+
+
+state 9:
+
+	stmtB : LEFTP . stmtB RIGHTP 
+	stmtC : LEFTP . stmtB RIGHTP 
+	stmtE : LEFTP . stmtB RIGHTP 
+	stmtF : LEFTP . stmtB RIGHTP 
+	stmtG : LEFTP . stmtB RIGHTP 
+
+	ATOMV	shift 12
+	NOTV	shift 11
+	IFV	shift 10
+	LEFTP	shift 9
+
+	stmtB	goto 20
+	stmtC	goto 5
+	stmtE	goto 4
+	stmtF	goto 3
+	stmtG	goto 2
+	stmtH	goto 1
+
+	.	error
+
+
+state 10:
+
+	stmtC : IFV . stmtC THENV stmtC 
+	stmtC : IFV . stmtC THENV stmtD ELSEV stmtC 
+
+	ATOMV	shift 12
+	NOTV	shift 11
+	IFV	shift 10
+	LEFTP	shift 22
+
+	stmtC	goto 21
+	stmtE	goto 4
+	stmtF	goto 3
+	stmtG	goto 2
+	stmtH	goto 1
+
+	.	error
+
+
+state 11:
+
+	stmtG : NOTV . stmtG 
+
+	ATOMV	shift 12
+	NOTV	shift 11
+	LEFTP	shift 24
+
+	stmtG	goto 23
+	stmtH	goto 1
+
+	.	error
+
+
+state 12:
+
+	stmtH : ATOMV .  (reduce by rule 24)
+
+
+
+	.	reduce by rule 24
+
+
+state 13:
+
+	stmtF : stmtG ORV . stmtF 
+
+	ATOMV	shift 12
+	NOTV	shift 11
+	LEFTP	shift 26
+
+	stmtF	goto 25
+	stmtG	goto 2
+	stmtH	goto 1
+
+	.	error
+
+
+state 14:
+
+	stmtE : stmtF ANDV . stmtE 
+
+	ATOMV	shift 12
+	NOTV	shift 11
+	LEFTP	shift 28
+
+	stmtE	goto 27
+	stmtF	goto 3
+	stmtG	goto 2
+	stmtH	goto 1
+
+	.	error
+
+
+state 15:
+
+	stmtB : stmtC IFFV . stmtB 
+
+	ATOMV	shift 12
+	NOTV	shift 11
+	IFV	shift 10
+	LEFTP	shift 9
+
+	stmtB	goto 29
+	stmtC	goto 5
+	stmtE	goto 4
+	stmtF	goto 3
+	stmtG	goto 2
+	stmtH	goto 1
+
+	.	error
+
+
+state 16:
+
+	stmtC : stmtC IFV . stmtC 
+
+	ATOMV	shift 12
+	NOTV	shift 11
+	IFV	shift 10
+	LEFTP	shift 22
+
+	stmtC	goto 30
+	stmtE	goto 4
+	stmtF	goto 3
+	stmtG	goto 2
+	stmtH	goto 1
+
+	.	error
+
+
+state 17:
+
+	stmtA : stmtB DOTV .  (reduce by rule 3)
+
+
+
+	.	reduce by rule 3
+
+
+state 18:
+
+	stmt : stmtA stmt .  (reduce by rule 1)
+
+
+
+	.	reduce by rule 1
+
+
+state 19:
+
+	start : stmt THEREFOREV . stmtA 
+
+	ATOMV	shift 12
+	NOTV	shift 11
+	IFV	shift 10
+	LEFTP	shift 9
+
+	stmtA	goto 31
+	stmtB	goto 6
+	stmtC	goto 5
+	stmtE	goto 4
+	stmtF	goto 3
+	stmtG	goto 2
+	stmtH	goto 1
+
+	.	error
+
+
+state 20:
+
+	stmtB : LEFTP stmtB . RIGHTP 
+	stmtC : LEFTP stmtB . RIGHTP 
+	stmtE : LEFTP stmtB . RIGHTP 
+	stmtF : LEFTP stmtB . RIGHTP 
+	stmtG : LEFTP stmtB . RIGHTP 
+
+	RIGHTP	shift 32
+
+
+	.	error
+
+
+state 21:
+
+	stmtC : IFV stmtC . THENV stmtC 
+	stmtC : stmtC . IFV stmtC 
+	stmtC : IFV stmtC . THENV stmtD ELSEV stmtC 
+
+	IFV	shift 16
+	THENV	shift 33
+
+
+	.	error
+
+
+state 22:
+
+	stmtC : LEFTP . stmtB RIGHTP 
+	stmtE : LEFTP . stmtB RIGHTP 
+	stmtF : LEFTP . stmtB RIGHTP 
+	stmtG : LEFTP . stmtB RIGHTP 
+
+	ATOMV	shift 12
+	NOTV	shift 11
+	IFV	shift 10
+	LEFTP	shift 9
+
+	stmtB	goto 34
+	stmtC	goto 5
+	stmtE	goto 4
+	stmtF	goto 3
+	stmtG	goto 2
+	stmtH	goto 1
+
+	.	error
+
+
+state 23:
+
+	stmtG : NOTV stmtG .  (reduce by rule 21)
+
+
+
+	.	reduce by rule 21
+
+
+state 24:
+
+	stmtG : LEFTP . stmtB RIGHTP 
+
+	ATOMV	shift 12
+	NOTV	shift 11
+	IFV	shift 10
+	LEFTP	shift 9
+
+	stmtB	goto 35
+	stmtC	goto 5
+	stmtE	goto 4
+	stmtF	goto 3
+	stmtG	goto 2
+	stmtH	goto 1
+
+	.	error
+
+
+state 25:
+
+	stmtF : stmtG ORV stmtF .  (reduce by rule 18)
+
+
+
+	.	reduce by rule 18
+
+
+state 26:
+
+	stmtF : LEFTP . stmtB RIGHTP 
+	stmtG : LEFTP . stmtB RIGHTP 
+
+	ATOMV	shift 12
+	NOTV	shift 11
+	IFV	shift 10
+	LEFTP	shift 9
+
+	stmtB	goto 36
+	stmtC	goto 5
+	stmtE	goto 4
+	stmtF	goto 3
+	stmtG	goto 2
+	stmtH	goto 1
+
+	.	error
+
+
+state 27:
+
+	stmtE : stmtF ANDV stmtE .  (reduce by rule 15)
+
+
+
+	.	reduce by rule 15
+
+
+state 28:
+
+	stmtE : LEFTP . stmtB RIGHTP 
+	stmtF : LEFTP . stmtB RIGHTP 
+	stmtG : LEFTP . stmtB RIGHTP 
+
+	ATOMV	shift 12
+	NOTV	shift 11
+	IFV	shift 10
+	LEFTP	shift 9
+
+	stmtB	goto 37
+	stmtC	goto 5
+	stmtE	goto 4
+	stmtF	goto 3
+	stmtG	goto 2
+	stmtH	goto 1
+
+	.	error
+
+
+state 29:
+
+	stmtB : stmtC IFFV stmtB .  (reduce by rule 4)
+
+
+
+	.	reduce by rule 4
+
+error:  state 30: shift/reduce conflict (shift IFV, reduce by rule 8)
+
+state 30:
+
+	stmtC : stmtC . IFV stmtC 
+	stmtC : stmtC IFV stmtC .  (reduce by rule 8)
+
+	IFV	shift 16
+
+
+	.	reduce by rule 8
+
+
+state 31:
+
+	start : stmt THEREFOREV stmtA .  (reduce by rule 0)
+
+
+
+	.	reduce by rule 0
+
+error:  state 32: reduce/reduce conflict between rule 11 and rule 5 on RIGHTP
+error:  state 32: reduce/reduce conflict between rule 11 and rule 5 on DOTV
+error:  state 32: reduce/reduce conflict between rule 17 and rule 11 on RIGHTP
+error:  state 32: reduce/reduce conflict between rule 17 and rule 11 on DOTV
+error:  state 32: reduce/reduce conflict between rule 17 and rule 11 on IFFV
+error:  state 32: reduce/reduce conflict between rule 17 and rule 11 on IFV
+error:  state 32: reduce/reduce conflict between rule 20 and rule 17 on RIGHTP
+error:  state 32: reduce/reduce conflict between rule 20 and rule 17 on DOTV
+error:  state 32: reduce/reduce conflict between rule 20 and rule 17 on IFFV
+error:  state 32: reduce/reduce conflict between rule 20 and rule 17 on IFV
+error:  state 32: reduce/reduce conflict between rule 23 and rule 20 on RIGHTP
+error:  state 32: reduce/reduce conflict between rule 23 and rule 20 on DOTV
+error:  state 32: reduce/reduce conflict between rule 23 and rule 20 on IFFV
+error:  state 32: reduce/reduce conflict between rule 23 and rule 20 on IFV
+error:  state 32: reduce/reduce conflict between rule 23 and rule 20 on ANDV
+
+state 32:
+
+	stmtB : LEFTP stmtB RIGHTP .  (reduce by rule 5)
+	stmtC : LEFTP stmtB RIGHTP .  (reduce by rule 11)
+	stmtE : LEFTP stmtB RIGHTP .  (reduce by rule 17)
+	stmtF : LEFTP stmtB RIGHTP .  (reduce by rule 20)
+	stmtG : LEFTP stmtB RIGHTP .  (reduce by rule 23)
+
+	ANDV	reduce by rule 20
+	ORV	reduce by rule 23
+	IFV	reduce by rule 11
+	IFFV	reduce by rule 11
+	DOTV	reduce by rule 5
+	RIGHTP	reduce by rule 5
+
+
+	.	error
+
+
+state 33:
+
+	stmtC : IFV stmtC THENV . stmtC 
+	stmtC : IFV stmtC THENV . stmtD ELSEV stmtC 
+
+	ATOMV	shift 12
+	NOTV	shift 11
+	IFV	shift 42
+	LEFTP	shift 41
+
+	stmtC	goto 40
+	stmtD	goto 39
+	stmtE	goto 38
+	stmtF	goto 3
+	stmtG	goto 2
+	stmtH	goto 1
+
+	.	error
+
+
+state 34:
+
+	stmtC : LEFTP stmtB . RIGHTP 
+	stmtE : LEFTP stmtB . RIGHTP 
+	stmtF : LEFTP stmtB . RIGHTP 
+	stmtG : LEFTP stmtB . RIGHTP 
+
+	RIGHTP	shift 43
+
+
+	.	error
+
+
+state 35:
+
+	stmtG : LEFTP stmtB . RIGHTP 
+
+	RIGHTP	shift 44
+
+
+	.	error
+
+
+state 36:
+
+	stmtF : LEFTP stmtB . RIGHTP 
+	stmtG : LEFTP stmtB . RIGHTP 
+
+	RIGHTP	shift 45
+
+
+	.	error
+
+
+state 37:
+
+	stmtE : LEFTP stmtB . RIGHTP 
+	stmtF : LEFTP stmtB . RIGHTP 
+	stmtG : LEFTP stmtB . RIGHTP 
+
+	RIGHTP	shift 46
+
+
+	.	error
+
+
+state 38:
+
+	stmtC : stmtE .  (reduce by rule 10)
+	stmtD : stmtE .  (reduce by rule 13)
+
+	IFV	reduce by rule 10
+	THENV	reduce by rule 10
+	IFFV	reduce by rule 10
+	ELSEV	reduce by rule 13
+	DOTV	reduce by rule 10
+	RIGHTP	reduce by rule 10
+
+
+	.	error
+
+
+state 39:
+
+	stmtC : IFV stmtC THENV stmtD . ELSEV stmtC 
+
+	ELSEV	shift 47
+
+
+	.	error
+
+error:  state 40: shift/reduce conflict (shift IFV, reduce by rule 7)
+
+state 40:
+
+	stmtC : IFV stmtC THENV stmtC .  (reduce by rule 7)
+	stmtC : stmtC . IFV stmtC 
+
+	IFV	shift 16
+
+
+	.	reduce by rule 7
+
+
+state 41:
+
+	stmtC : LEFTP . stmtB RIGHTP 
+	stmtD : LEFTP . stmtB RIGHTP 
+	stmtE : LEFTP . stmtB RIGHTP 
+	stmtF : LEFTP . stmtB RIGHTP 
+	stmtG : LEFTP . stmtB RIGHTP 
+
+	ATOMV	shift 12
+	NOTV	shift 11
+	IFV	shift 10
+	LEFTP	shift 9
+
+	stmtB	goto 48
+	stmtC	goto 5
+	stmtE	goto 4
+	stmtF	goto 3
+	stmtG	goto 2
+	stmtH	goto 1
+
+	.	error
+
+
+state 42:
+
+	stmtC : IFV . stmtC THENV stmtC 
+	stmtC : IFV . stmtC THENV stmtD ELSEV stmtC 
+	stmtD : IFV . stmtC THENV stmtD ELSEV stmtD 
+
+	ATOMV	shift 12
+	NOTV	shift 11
+	IFV	shift 10
+	LEFTP	shift 22
+
+	stmtC	goto 49
+	stmtE	goto 4
+	stmtF	goto 3
+	stmtG	goto 2
+	stmtH	goto 1
+
+	.	error
+
+error:  state 43: reduce/reduce conflict between rule 17 and rule 11 on RIGHTP
+error:  state 43: reduce/reduce conflict between rule 17 and rule 11 on DOTV
+error:  state 43: reduce/reduce conflict between rule 17 and rule 11 on IFFV
+error:  state 43: reduce/reduce conflict between rule 17 and rule 11 on THENV
+error:  state 43: reduce/reduce conflict between rule 17 and rule 11 on IFV
+error:  state 43: reduce/reduce conflict between rule 20 and rule 17 on RIGHTP
+error:  state 43: reduce/reduce conflict between rule 20 and rule 17 on DOTV
+error:  state 43: reduce/reduce conflict between rule 20 and rule 17 on IFFV
+error:  state 43: reduce/reduce conflict between rule 20 and rule 17 on THENV
+error:  state 43: reduce/reduce conflict between rule 20 and rule 17 on IFV
+error:  state 43: reduce/reduce conflict between rule 23 and rule 20 on RIGHTP
+error:  state 43: reduce/reduce conflict between rule 23 and rule 20 on DOTV
+error:  state 43: reduce/reduce conflict between rule 23 and rule 20 on IFFV
+error:  state 43: reduce/reduce conflict between rule 23 and rule 20 on THENV
+error:  state 43: reduce/reduce conflict between rule 23 and rule 20 on IFV
+error:  state 43: reduce/reduce conflict between rule 23 and rule 20 on ANDV
+
+state 43:
+
+	stmtC : LEFTP stmtB RIGHTP .  (reduce by rule 11)
+	stmtE : LEFTP stmtB RIGHTP .  (reduce by rule 17)
+	stmtF : LEFTP stmtB RIGHTP .  (reduce by rule 20)
+	stmtG : LEFTP stmtB RIGHTP .  (reduce by rule 23)
+
+	ANDV	reduce by rule 20
+	ORV	reduce by rule 23
+	IFV	reduce by rule 11
+	THENV	reduce by rule 11
+	IFFV	reduce by rule 11
+	DOTV	reduce by rule 11
+	RIGHTP	reduce by rule 11
+
+
+	.	error
+
+
+state 44:
+
+	stmtG : LEFTP stmtB RIGHTP .  (reduce by rule 23)
+
+
+
+	.	reduce by rule 23
+
+error:  state 45: reduce/reduce conflict between rule 23 and rule 20 on RIGHTP
+error:  state 45: reduce/reduce conflict between rule 23 and rule 20 on DOTV
+error:  state 45: reduce/reduce conflict between rule 23 and rule 20 on ELSEV
+error:  state 45: reduce/reduce conflict between rule 23 and rule 20 on IFFV
+error:  state 45: reduce/reduce conflict between rule 23 and rule 20 on THENV
+error:  state 45: reduce/reduce conflict between rule 23 and rule 20 on IFV
+error:  state 45: reduce/reduce conflict between rule 23 and rule 20 on ANDV
+
+state 45:
+
+	stmtF : LEFTP stmtB RIGHTP .  (reduce by rule 20)
+	stmtG : LEFTP stmtB RIGHTP .  (reduce by rule 23)
+
+	ANDV	reduce by rule 20
+	ORV	reduce by rule 23
+	IFV	reduce by rule 20
+	THENV	reduce by rule 20
+	IFFV	reduce by rule 20
+	ELSEV	reduce by rule 20
+	DOTV	reduce by rule 20
+	RIGHTP	reduce by rule 20
+
+
+	.	error
+
+error:  state 46: reduce/reduce conflict between rule 20 and rule 17 on RIGHTP
+error:  state 46: reduce/reduce conflict between rule 20 and rule 17 on DOTV
+error:  state 46: reduce/reduce conflict between rule 20 and rule 17 on ELSEV
+error:  state 46: reduce/reduce conflict between rule 20 and rule 17 on IFFV
+error:  state 46: reduce/reduce conflict between rule 20 and rule 17 on THENV
+error:  state 46: reduce/reduce conflict between rule 20 and rule 17 on IFV
+error:  state 46: reduce/reduce conflict between rule 23 and rule 20 on RIGHTP
+error:  state 46: reduce/reduce conflict between rule 23 and rule 20 on DOTV
+error:  state 46: reduce/reduce conflict between rule 23 and rule 20 on ELSEV
+error:  state 46: reduce/reduce conflict between rule 23 and rule 20 on IFFV
+error:  state 46: reduce/reduce conflict between rule 23 and rule 20 on THENV
+error:  state 46: reduce/reduce conflict between rule 23 and rule 20 on IFV
+error:  state 46: reduce/reduce conflict between rule 23 and rule 20 on ANDV
+
+state 46:
+
+	stmtE : LEFTP stmtB RIGHTP .  (reduce by rule 17)
+	stmtF : LEFTP stmtB RIGHTP .  (reduce by rule 20)
+	stmtG : LEFTP stmtB RIGHTP .  (reduce by rule 23)
+
+	ANDV	reduce by rule 20
+	ORV	reduce by rule 23
+	IFV	reduce by rule 17
+	THENV	reduce by rule 17
+	IFFV	reduce by rule 17
+	ELSEV	reduce by rule 17
+	DOTV	reduce by rule 17
+	RIGHTP	reduce by rule 17
+
+
+	.	error
+
+
+state 47:
+
+	stmtC : IFV stmtC THENV stmtD ELSEV . stmtC 
+
+	ATOMV	shift 12
+	NOTV	shift 11
+	IFV	shift 10
+	LEFTP	shift 22
+
+	stmtC	goto 50
+	stmtE	goto 4
+	stmtF	goto 3
+	stmtG	goto 2
+	stmtH	goto 1
+
+	.	error
+
+
+state 48:
+
+	stmtC : LEFTP stmtB . RIGHTP 
+	stmtD : LEFTP stmtB . RIGHTP 
+	stmtE : LEFTP stmtB . RIGHTP 
+	stmtF : LEFTP stmtB . RIGHTP 
+	stmtG : LEFTP stmtB . RIGHTP 
+
+	RIGHTP	shift 51
+
+
+	.	error
+
+
+state 49:
+
+	stmtC : IFV stmtC . THENV stmtC 
+	stmtC : stmtC . IFV stmtC 
+	stmtC : IFV stmtC . THENV stmtD ELSEV stmtC 
+	stmtD : IFV stmtC . THENV stmtD ELSEV stmtD 
+
+	IFV	shift 16
+	THENV	shift 52
+
+
+	.	error
+
+error:  state 50: shift/reduce conflict (shift IFV, reduce by rule 9)
+
+state 50:
+
+	stmtC : stmtC . IFV stmtC 
+	stmtC : IFV stmtC THENV stmtD ELSEV stmtC .  (reduce by rule 9)
+
+	IFV	shift 16
+
+
+	.	reduce by rule 9
+
+error:  state 51: reduce/reduce conflict between rule 17 and rule 11 on RIGHTP
+error:  state 51: reduce/reduce conflict between rule 17 and rule 11 on DOTV
+error:  state 51: reduce/reduce conflict between rule 17 and rule 11 on IFFV
+error:  state 51: reduce/reduce conflict between rule 17 and rule 11 on THENV
+error:  state 51: reduce/reduce conflict between rule 17 and rule 11 on IFV
+error:  state 51: reduce/reduce conflict between rule 17 and rule 14 on ELSEV
+error:  state 51: reduce/reduce conflict between rule 20 and rule 17 on RIGHTP
+error:  state 51: reduce/reduce conflict between rule 20 and rule 17 on DOTV
+error:  state 51: reduce/reduce conflict between rule 20 and rule 17 on ELSEV
+error:  state 51: reduce/reduce conflict between rule 20 and rule 17 on IFFV
+error:  state 51: reduce/reduce conflict between rule 20 and rule 17 on THENV
+error:  state 51: reduce/reduce conflict between rule 20 and rule 17 on IFV
+error:  state 51: reduce/reduce conflict between rule 23 and rule 20 on RIGHTP
+error:  state 51: reduce/reduce conflict between rule 23 and rule 20 on DOTV
+error:  state 51: reduce/reduce conflict between rule 23 and rule 20 on ELSEV
+error:  state 51: reduce/reduce conflict between rule 23 and rule 20 on IFFV
+error:  state 51: reduce/reduce conflict between rule 23 and rule 20 on THENV
+error:  state 51: reduce/reduce conflict between rule 23 and rule 20 on IFV
+error:  state 51: reduce/reduce conflict between rule 23 and rule 20 on ANDV
+
+state 51:
+
+	stmtC : LEFTP stmtB RIGHTP .  (reduce by rule 11)
+	stmtD : LEFTP stmtB RIGHTP .  (reduce by rule 14)
+	stmtE : LEFTP stmtB RIGHTP .  (reduce by rule 17)
+	stmtF : LEFTP stmtB RIGHTP .  (reduce by rule 20)
+	stmtG : LEFTP stmtB RIGHTP .  (reduce by rule 23)
+
+	ANDV	reduce by rule 20
+	ORV	reduce by rule 23
+	IFV	reduce by rule 11
+	THENV	reduce by rule 11
+	IFFV	reduce by rule 11
+	ELSEV	reduce by rule 14
+	DOTV	reduce by rule 11
+	RIGHTP	reduce by rule 11
+
+
+	.	error
+
+
+state 52:
+
+	stmtC : IFV stmtC THENV . stmtC 
+	stmtC : IFV stmtC THENV . stmtD ELSEV stmtC 
+	stmtD : IFV stmtC THENV . stmtD ELSEV stmtD 
+
+	ATOMV	shift 12
+	NOTV	shift 11
+	IFV	shift 42
+	LEFTP	shift 41
+
+	stmtC	goto 40
+	stmtD	goto 53
+	stmtE	goto 38
+	stmtF	goto 3
+	stmtG	goto 2
+	stmtH	goto 1
+
+	.	error
+
+
+state 53:
+
+	stmtC : IFV stmtC THENV stmtD . ELSEV stmtC 
+	stmtD : IFV stmtC THENV stmtD . ELSEV stmtD 
+
+	ELSEV	shift 54
+
+
+	.	error
+
+
+state 54:
+
+	stmtC : IFV stmtC THENV stmtD ELSEV . stmtC 
+	stmtD : IFV stmtC THENV stmtD ELSEV . stmtD 
+
+	ATOMV	shift 12
+	NOTV	shift 11
+	IFV	shift 42
+	LEFTP	shift 41
+
+	stmtC	goto 50
+	stmtD	goto 55
+	stmtE	goto 38
+	stmtF	goto 3
+	stmtG	goto 2
+	stmtH	goto 1
+
+	.	error
+
+
+state 55:
+
+	stmtD : IFV stmtC THENV stmtD ELSEV stmtD .  (reduce by rule 12)
+
+
+
+	.	reduce by rule 12
+
+
+state 56:
+
+
+	EOF	accept
+
+
+	.	error
+
+90 of 199 action table entries left after compaction
+113 goto table entries
