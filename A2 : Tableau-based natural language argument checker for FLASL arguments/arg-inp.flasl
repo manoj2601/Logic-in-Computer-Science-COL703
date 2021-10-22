@@ -1,0 +1,9 @@
+IF "a" THEN "b".
+IF "c" THEN "d".
+IF ("b" OR "d") THEN NOT "e".
+IF "g" THEN "f".
+IF (NOT("c" OR "h" OR "i")) THEN "g".
+IF "h" THEN "f".
+IF "f" THEN "a".
+"e".
+THEREFORE "i".
