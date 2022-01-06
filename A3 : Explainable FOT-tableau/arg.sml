@@ -1,0 +1,1 @@
+val arg = HENCE([AND( ATOM("k",[VAR("a"),VAR("b")]) , ATOM("j",[VAR("a")])  ), ATOM("a2", [])], ATOM("a3", []));

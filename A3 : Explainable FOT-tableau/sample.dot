@@ -1,0 +1,25 @@
+digraph{
+	nodesep = 0.5;
+	ranksep = 0.35;
+	node [shape=plaintext];
+	0 [texlbl="\underline{0. $root$ }"];
+	1 [texlbl="\underline{ $1. k(a, b) \land j(a)$ }"];
+	2 [texlbl="\underline{ $2. k(a, b)$ }"];
+	3 [texlbl="\underline{ $3. j(a)$ }"];
+	4 [texlbl="\underline{ $4. a2()$ }"];
+	5 [texlbl="\underline{ $5. \neg (a3())$ }"];
+	
+
+subgraph dir
+{
+	4 -> 5;
+	3 -> 4;
+	2 -> 3;
+	1 -> 2;
+	0 -> 1;
+}
+subgraph ancestor {
+	edge [dir=back, color=blue, style=dashed]
+	1 -> 3;
+}
+}
